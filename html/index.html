@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icecnguyen CertApple</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to icecnguyen CertApple</h1>
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Product Description</p>
+        <div class="packages">
+            <div class="package basic">
+                <h3>Cơ bản</h3>
+                <p>55.000 VND</p>
+                <button class="buyBtn" data-price="55000">Buy Now</button>
+            </div>
+            <div class="package express">
+                <h3>Lấy ngay</h3>
+                <p>170.000 VND</p>
+                <button class="buyBtn" data-price="170000">Buy Now</button>
+            </div>
+            <div class="package unban">
+                <h3>Unban</h3>
+                <p>240.000 VND</p>
+                <button class="buyBtn" data-price="240000">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Payment Details</h2>
+            <p>Bank: <span id="bankName">BIDV</span></p>
+            <p>Account Number: <span id="accountNumber"></span></p>
+            <p>Payment Code: <span id="paymentCode"></span></p>
+            <img id="qrCode" src="" alt="QR Code">
+        </div>
+    </div>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
